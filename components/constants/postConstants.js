@@ -1,0 +1,3 @@
+export const POST_ADD_REQUEST = 'POST_ADD_REQUEST'
+export const POST_ADD_SUCCESS = 'POST_ADD_SUCCESS'
+export const POST_ADD_FAIL = 'POST_ADD_FAIL'
