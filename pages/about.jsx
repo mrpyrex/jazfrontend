@@ -94,64 +94,6 @@ const about = () => {
           </Row>
         </Container>
       </section>
-      <section className="training d-flex justify-content-center align-items-center py-4">
-        <Container>
-          <div className="text-center">
-            <h2 className="display-2">Training</h2>
-            <p>Learn How to make pateries like a pro</p>
-          </div>
-
-          <Row>
-            <Col md={4}>
-              <Card className="bg-success text-white">
-                <Card.Header>
-                  <Card.Title>Basic</Card.Title>
-                </Card.Header>
-                <Card.Body>
-                  <Card.Text>
-                    Learn how to make different types of cakes and cookies. You
-                    will also learn different mixing and piping techniques as
-                    well as butter cream icing decoration.
-                  </Card.Text>
-                </Card.Body>
-                <Card.Footer>25,000</Card.Footer>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card className="bg-warning text-white">
-                <Card.Header>
-                  <Card.Title>Basic</Card.Title>
-                </Card.Header>
-                <Card.Body>
-                  <Card.Text>
-                    Learn how to use sugar craft accessories and tools. You will
-                    also learn how to make sugar paste, modelling paste, royal
-                    icing and gum paste flower. You will learn how to create a
-                    painting and dusting effect.
-                  </Card.Text>
-                </Card.Body>
-                <Card.Footer>25,000</Card.Footer>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card className="bg-danger text-white">
-                <Card.Header>
-                  <Card.Title>Basic</Card.Title>
-                </Card.Header>
-                <Card.Body>
-                  <Card.Text>
-                    Improve on what you have learned in the basic class learn to
-                    work with fondant, mixing of fondant and covering a cake
-                    with fondant. Fondant fabric effect: draping, bowl, twist
-                    and swag.
-                  </Card.Text>
-                </Card.Body>
-                <Card.Footer>25,000</Card.Footer>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      </section>
     </div>
   );
 };

@@ -72,13 +72,9 @@ const index = () => {
                 <h2 className="display-3">Our Story</h2>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi cupiditate laborum voluptate eius vero non
-                exercitationem perspiciatis vel fugiat laboriosam earum saepe
-                odit, illum, commodi delectus accusamus cumque totam ea,
-                molestias perferendis fuga tempora recusandae aut ducimus.
-                Repellat error nobis ratione commodi consequuntur numquam eaque
-                eveniet dolor earum. Rerum, distinctio.
+                We are all about quality and freshness with a taste that leaves
+                a lasting impression on your taste buds. We pour out all the
+                love in our hearts into making every of our product.
               </p>
               <Link href="/about">
                 <a className="btn mt-4 mb-5 mb-md-0">Learn More</a>

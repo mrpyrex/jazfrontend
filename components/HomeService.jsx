@@ -22,8 +22,8 @@ const HomeService = () => {
                     </a>
                   </Link>
                   <p>
-                    Lorem Ipsum is simply my text of the printing and Ipsum is
-                    simply text of the Ipsum is simply.
+                    From Engagement cakes to themed wedding cakes, we got you
+                    covered
                   </p>
                 </div>
               </div>
@@ -43,8 +43,8 @@ const HomeService = () => {
                     </a>
                   </Link>
                   <p>
-                    Lorem Ipsum is simply my text of the printing and Ipsum is
-                    simply text of the Ipsum is simply.
+                    There's no complete day without a birthday cake as everyday
+                    is someone's birthday!
                   </p>
                 </div>
               </div>
@@ -63,8 +63,8 @@ const HomeService = () => {
                     </a>
                   </Link>
                   <p>
-                    Lorem Ipsum is simply my text of the printing and Ipsum is
-                    simply text of the Ipsum is simply.
+                    Whether it's just for you alone or with the entire family
+                    and friends, cupcakes are just perfect for that sitout.
                   </p>
                 </div>
               </div>
@@ -85,8 +85,7 @@ const HomeService = () => {
                     </a>
                   </Link>
                   <p>
-                    Lorem Ipsum is simply my text of the printing and Ipsum is
-                    simply text of the Ipsum is simply.
+                    If you love snacks, we make the best small chops and snacks
                   </p>
                 </div>
               </div>
@@ -105,8 +104,8 @@ const HomeService = () => {
                     </a>
                   </Link>
                   <p>
-                    Lorem Ipsum is simply my text of the printing and Ipsum is
-                    simply text of the Ipsum is simply.
+                    We can take the hassle from you and make your event perfect
+                    no matter your budget
                   </p>
                 </div>
               </div>
@@ -124,10 +123,7 @@ const HomeService = () => {
                       <h4>Home Delivery</h4>
                     </a>
                   </Link>
-                  <p>
-                    Lorem Ipsum is simply my text of the printing and Ipsum is
-                    simply text of the Ipsum is simply.
-                  </p>
+                  <p>We deliver same day anywhere in Akwa Ibom state</p>
                 </div>
               </div>
             </div>

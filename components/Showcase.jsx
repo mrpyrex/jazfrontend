@@ -7,12 +7,12 @@ const Showcase = () => {
       <Container>
         <div className="showcase-text">
           <h1 className="display-2">Welcome</h1>
-          <p>The Home Of Sweetness Like You've Never Known!</p>
-          <Link href="/about">
-            <a className="btn mr-2">Learn More</a>
-          </Link>
+          <p>The home of Sweetness like you've never known!</p>
           <Link href="/contact">
-            <a className="btn ml-2">Order Now</a>
+            <a className="btn mr-2">Order Now</a>
+          </Link>
+          <Link href="/about">
+            <a className="btn ml-2">Learn More</a>
           </Link>
         </div>
       </Container>

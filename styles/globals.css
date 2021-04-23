@@ -80,12 +80,15 @@ h6 {
 .jumbotron-fluid {
   background-color: var(--primary-color) !important;
   color: #fff;
+  height: 300px;
 }
 
-#home-about,
-#home-menu,
-#chef {
-  padding-top: 6rem;
+#gallery,
+.about,
+#contact,
+#blog,
+#post {
+  padding-top: 100px;
 }
 
 /* Navbar */
@@ -107,52 +110,178 @@ h6 {
 
 /* ADMIN */
 
-.admin-header {
-  background: var(--primary-tint-color);
+.sidebar {
+  width: 345px;
+  position: fixed;
+  height: 100%;
+  background-color: var(--primary-color);
+  z-index: 100;
+}
+
+.sidebar-brand {
+  height: 90px;
+  padding: 1rem 0 1rem 2rem;
   color: #fff;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
+}
+
+.sidebar-brand span {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.sidebar-menu {
+  margin-top: 1rem;
+}
+
+.sidebar-menu li {
+  width: 100%;
+  margin-bottom: 1.7rem;
+  padding-left: 2rem;
+}
+
+.sidebar-menu a {
+  padding-left: 1rem;
+  display: block;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.sidebar-menu a.active {
+  background: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--primary-color);
+  border-radius: 30px 0 0 30px;
+}
+
+.sidebar-menu a span:first-child {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+
+.main-content {
+  margin-left: 345px;
+}
+
+.main-content header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  /* position: fixed; */
+  left: 345px;
+  /* width: calc(100% - 345px); */
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.main-content header h2 {
+  color: #222;
+}
+
+.main-content header label span {
+  font-size: 1.7rem;
+  padding-right: 1rem;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #420404;
+  border-radius: 30px;
+  height: 50px;
+  overflow-x: hidden;
+}
+
+.search-wrapper input {
+  height: 100%;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+}
+
+.search-wrapper span {
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
+
+.user-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.user-wrapper img {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.user-wrapper small {
+  display: inline-block;
+  color: grey;
+}
+
+.main-content main {
+  /* padding-top: 2000px; */
+  padding: 2rem 1.5rem;
+  background: #f0f0f0;
+  /* min-height: calc(100vh - 120px); */
+  min-height: 100vh;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.card-single {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.card-single div:last-child span {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.card-single div:first-child span {
+  color: grey;
 }
 
 /* Showcase */
 
 header .jumbotron {
-  background: linear-gradient(rgba(227, 77, 102, 0.95), rgba(16, 29, 44, 0.95)),
+  background: linear-gradient(rgba(227, 77, 102, 0.8), rgba(16, 29, 44, 0.8)),
     url("../public/img/j1.jpg") center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center !important;
   justify-content: center;
   height: 100vh;
-}
-
-/* .carousel-inner {
-  background: linear-gradient(rgba(16, 29, 44, 0.95), rgba(16, 29, 44, 0.95));
-}
-
-.carousel .btn {
-  width: 170px;
-  background-color: var(--primary-color);
+  text-align: center;
   color: #fff;
-  border: 1px solid;
+}
+
+header .btn {
   border-radius: 43px;
   transition: background-color 400ms;
+  color: #fff;
+  width: 120px;
+  background-color: var(--primary-color);
 }
 
-.carousel .btn:hover {
+header .btn:hover {
   background-color: transparent;
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
+  color: #fff !important;
 }
-
-.carousel-caption h3 {
-  font-size: 2.5rem;
-}
-
-.carousel-caption h3,
-.carousel-caption p {
-  color: var(--primary-color);
-} */
 
 /* Home Service Section */
 
@@ -168,7 +297,7 @@ header .jumbotron {
   color: var(--primary-color);
   padding-bottom: 10px;
   margin-bottom: 0px;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .s_we_item {
@@ -178,6 +307,7 @@ header .jumbotron {
   -webkit-transition: all 400ms linear 0s;
   -o-transition: all 400ms linear 0s;
   transition: all 400ms linear 0s;
+  height: 250px;
 }
 
 .s_we_item .media .d-flex {
@@ -250,6 +380,15 @@ header .jumbotron {
 
 /* Home-About Section */
 
+#home-about {
+  padding-top: 3rem;
+}
+
+#home-about p {
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+
 .section-heading h4 {
   text-transform: uppercase;
   color: var(--primary-color);
@@ -281,6 +420,9 @@ header .jumbotron {
 }
 
 /* Home Menu */
+#home-menu {
+  margin-top: 6rem;
+}
 
 .point-right,
 .point-left {
@@ -338,6 +480,8 @@ header .jumbotron {
 .chef {
   background: #f6f6f6;
   margin-bottom: 3rem;
+  padding-top: 3rem;
+  margin-top: 3rem;
 }
 .chef .main-title h4 {
   color: var(--primary-color);

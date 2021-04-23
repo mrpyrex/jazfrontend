@@ -2,6 +2,7 @@ import Link from "next/link";
 import Moment from "react-moment";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import { FiClock, FiUser } from "react-icons/fi";
+import Meta from "../../components/Meta";
 import { IconContext } from "react-icons";
 
 export const getStaticPaths = async () => {
@@ -32,11 +33,12 @@ export const getStaticProps = async (context) => {
 
 const postDetails = ({ post }) => {
   return (
-    <div>
+    <div id="post">
+      <Meta title={post.title} description={post.content} />
       <Container>
         <Row>
           <Col md={9}>
-            <article id="post">
+            <article>
               <div className="section-heading my-5 text-center ">
                 <h2 className="display-2">{post.title}</h2>
                 <FiClock />

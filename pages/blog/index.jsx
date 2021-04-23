@@ -42,7 +42,9 @@ const index = ({ posts }) => {
                               post.author.slice(1)}
                           </p>
                           <small className="text-muted">
-                            <Moment fromNow>{post.created_at}</Moment>
+                            <Moment format="D MMM YYYY">
+                              {post.created_at}
+                            </Moment>
                           </small>
                         </div>
                       </Card.Text>
