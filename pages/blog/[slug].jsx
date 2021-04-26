@@ -6,7 +6,9 @@ import Meta from "../../components/Meta";
 import { IconContext } from "react-icons";
 
 export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:8000/api/blog/");
+  const res = await fetch(
+    "https://protected-anchorage-64109.herokuapp.com/api/blog/"
+  );
   const data = await res.json();
 
   const paths = data.map((post) => {
