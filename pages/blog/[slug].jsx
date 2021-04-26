@@ -23,7 +23,9 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const slug = context.params.slug;
-  const res = await fetch(`http://localhost:8000/api/blog/${slug}`);
+  const res = await fetch(
+    `https://protected-anchorage-64109.herokuapp.com/api/blog/${slug}`
+  );
   const data = await res.json();
 
   return {
